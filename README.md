@@ -9,10 +9,10 @@ It takes two possible arguments:
 No additional dependencies required. Clone the repository and make the script executable.
 
 ```bash
-chmod +x line_metrics.sh
+chmod +x line_metrics.sh```
 
 ## Usage
-```./line_metrics.sh filename.txt
+```./line_metrics.sh filename.txt```
 
 ## Options
  - **-l** or **length** to give a max line length. Any lines longer than this length will be displayed.
