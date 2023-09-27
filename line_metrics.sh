@@ -20,7 +20,7 @@ fi
 # Main logic to process each line and filter out those longer than $length
 process_lines() {  # creates the process_lines function
     local counter=1
-    while IFS= read -r line; do
+    while IFS= read -r line || [[ -n "$line" ]]; do
         char_count=$(echo -n "$line" | wc -c | awk '{print $1}')
         
         # If $length is defined, filter out only the lines which are greater than $length long
